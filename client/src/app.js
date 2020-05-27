@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const financialsListElement = document.querySelector('ul#stocks-list');
   const fiancialsListView = new ListView('financials', financialsListElement);
-  biscuitsListView.bindEvents();
+  fiancialsListView.bindEvents();
 
   const apiUrl = 'http://localhost:3000/api';
 
