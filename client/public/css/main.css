@@ -1,0 +1,25 @@
+body {
+  font-family: "Andale Mono";
+
+}
+
+li{
+margin:  5px 5px 5px 5px;
+padding: 15px 15px 15px 15px;
+display: flex;
+flex-wrap: wrap;
+text-decoration: none;
+align-content:center;
+}
+
+li:nth-child(even) {
+  background: #CCC;
+}
+
+li:nth-child(odd) {
+  background: #FAF0E6;
+}
+
+ul#biscuits-list{
+  margin: 100px;
+}
