@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const formView = new FormView(formElement);
   formView.bindEvents();
 
-  const biscuitsListElement = document.querySelector('ul#stocks-list');
-  const biscuitsListView = new ListView('financials', biscuitsListElement);
+  const financialsListElement = document.querySelector('ul#stocks-list');
+  const fiancialsListView = new ListView('financials', financialsListElement);
   biscuitsListView.bindEvents();
 
   const apiUrl = 'http://localhost:3000/api';
 
-  const biscuits = new Consumables('financials', `${apiUrl}/financials`);
-  biscuits.bindEvents();
-  biscuits.getData();
+  const financials = new Consumables('financials', `${apiUrl}/financials`);
+  financials.bindEvents();
+  financials.getData();
 
 });
