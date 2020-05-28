@@ -16,10 +16,13 @@ FormView.prototype.bindEvents = function () {
 };
 
 FormView.prototype.createData = function (form) {
- 
+
   return {
     ticker: form.ticker.value,
-    price: form.price.value
+    price: form.price.value,
+    changes: "",
+    changesPercentage: "",
+    companyName: ""
   };
 };
 
